@@ -1,6 +1,6 @@
-# O1 Browser Interface
+# OpenAI API Interface
 
-This project is a Flask-based web application that provides a chat interface similar to ChatGPT. It uses OpenAI's API to interact with the "o1" model, stores chat history in a SQLite database, and allows setting a custom prompt.
+This project is a Flask-based web application that provides a chat interface similar to ChatGPT. It uses OpenAI's API to interact with the gpt models, stores chat history in a SQLite database, and allows setting a custom prompt.
 
 ## Setup
 
@@ -27,7 +27,7 @@ Then open your browser and go to http://localhost:5000.
 ### File Structure
 
 ```
-o1_browser_interface/
+OpenAI_API_Interface/
 ├── app/
 │   ├── __init__.py
 │   ├── routes.py

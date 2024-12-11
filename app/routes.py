@@ -54,7 +54,7 @@ def send_message():
     # Call OpenAI API
     try:
         response = openai.ChatCompletion.create(
-            model="gpt-4o-mini",
+            model="gpt-4o",
             messages=messages,
             temperature=0.7,
             max_tokens=2000,
