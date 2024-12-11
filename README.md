@@ -8,9 +8,25 @@ This project is a Flask-based web application that provides a chat interface sim
    ```bash
    python3 -m venv venv
    source venv/bin/activate
+   pip install -r requirements.txt
+   ```
+ 
+2. Create a .env file with the following variables:
+   ```bash
+   OPENAI_API_KEY=your_openai_api_key
+   ```
 
+## Run
+
+To run the application, use the following command:
+   ```bash
+   python run.py
+   ```
+Then open your browser and go to http://localhost:5000.
 
 ### File Structure
+
+```
 o1_browser_interface/
 ├── app/
 │   ├── __init__.py
@@ -30,3 +46,6 @@ o1_browser_interface/
 ├── run.py
 ├── .gitignore
 └── README.md
+
+```
+
