@@ -22,10 +22,11 @@ document.addEventListener("DOMContentLoaded", function () {
             body: formData,
           });
           const data = await response.json();
+
           if (data.error) {
             addMessageToUI("error", data.error);
           } else {
-            addMessageToUI("gpt-4", data.message); // Display AI response with model name
+            addMessageToUI("Assistant", data.message); // Display AI response with model name
           }
         } catch (error) {
           addMessageToUI("error", "Error sending message. Please try again.");
@@ -39,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
       const messageContent = document.createElement("div");
       messageContent.classList.add("message-content");
-      messageContent.textContent = `${role === "user" ? "User" : role === "gpt-4" ? "GPT-4" : "Error"}: ${message}`;
+      messageContent.textContent = `${role}: ${message}`;
   
       messageRow.appendChild(messageContent);
       chatContainer.appendChild(messageRow);

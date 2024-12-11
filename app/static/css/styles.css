@@ -152,44 +152,6 @@ body {
     background-color: #45a049;
 }
 
-/* Custom Prompt Section */
-.custom-prompt-section {
-    margin-bottom: 15px;
-}
-
-.custom-prompt-section form {
-    display: flex;
-    flex-direction: column;
-}
-
-.custom-prompt-section textarea {
-    width: 100%;
-    height: 60px;
-    font-size: 1rem;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.custom-prompt-section button {
-    align-self: flex-end;
-    padding: 10px 15px;
-    font-size: 1rem;
-    color: #ffffff;
-    background-color: #2196f3;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-}
-
-.custom-prompt-section button:hover {
-    background-color: #1e88e5;
-}
-
 /* Footer */
 .footer {
     background-color: #202123;

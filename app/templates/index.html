@@ -1,15 +1,6 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="app-wrapper">
-    <!-- Custom Prompt Section -->
-    <div class="custom-prompt-section">
-        <form id="custom-prompt-form" method="POST">
-            <label for="custom_prompt">Customize Responses:</label>
-            <textarea id="custom_prompt" name="custom_prompt" placeholder="e.g., Respond as a friendly math tutor">{{ custom_prompt }}</textarea>
-            <button type="submit">Save Prompt</button>
-        </form>
-    </div>
-
     <!-- Chat Container -->
     <div class="chat-container" id="chat-container">
         {% for msg in history %}
