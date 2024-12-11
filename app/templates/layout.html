@@ -7,9 +7,26 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
+  <header class="header">
+    <h1>O1 Browser Interface</h1>
+  </header>
   <div class="container">
-    {% block content %}{% endblock %}
+    <aside class="sidebar">
+      <h2>Chat History</h2>
+      <ul class="history-list">
+        <!-- Sidebar chat history dynamically rendered -->
+        {% for chat in history %}
+        <li class="history-item">{{ chat.message }}</li>
+        {% endfor %}
+      </ul>
+    </aside>
+    <main class="chat-main">
+      {% block content %}{% endblock %}
+    </main>
   </div>
+  <footer class="footer">
+    <p>&copy; 2024 O1 Browser Interface. All rights reserved.</p>
+  </footer>
   <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 </body>
 </html>
